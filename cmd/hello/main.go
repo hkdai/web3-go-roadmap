@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"flag"
+	"fmt"
+)
+
+var version = "v0.1.0"
 
 func main() {
-	fmt.Println("hello world")
+	showVer := flag.Bool("version", false, "print version")
+	flag.Parse()
+	if *showVer {
+		fmt.Println("hello", version)
+	}
+	//fmt.Println("hello,web3!")
 }
