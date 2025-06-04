@@ -1,0 +1,27 @@
+### Go ###
+# 编译产物
+*.exe
+*.test
+*.out
+# 覆盖率等中间文件
+*.coverprofile
+*.cov
+# vendor 目录（若你使用 go modules，不需要 vendor）
+vendor/
+
+### JetBrains (IntelliJ / GoLand) ###
+.idea/
+*.iws
+*.iml
+out/
+
+### VS Code ###
+.vscode/
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Logs & Temp ###
+*.log
+*.tmp
