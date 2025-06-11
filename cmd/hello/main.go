@@ -1,17 +1,7 @@
 package main
 
-import (
-	"flag"
-	"fmt"
-)
-
-var version = "v0.1.0"
+import "web3-go-roadmap/internal/hello"
 
 func main() {
-	showVer := flag.Bool("version", false, "print version")
-	flag.Parse()
-	if *showVer {
-		fmt.Println("hello", version)
-	}
-	//fmt.Println("hello,web3!")
+	hello.PrintVersion()
 }
